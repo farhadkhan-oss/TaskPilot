@@ -1,0 +1,67 @@
+import { ChevronsLeftRight, Plus } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { type IssueGroup } from '@/utils/project';
+import { usePermissions } from '@/hooks/usePermissions';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+import { GroupDot } from '../shared/GroupDot';
+import { type WipState, WIP_FULL_TEXT, wipFullColor } from '../../utils/wipLimit';
+
+// A column collapsed to a narrow vertical strip. It stays in place (in column
+// order) with its name reading vertically and its count visible; collapsing only
+// gives the column's horizontal space back.
+export function CollapsedColumn({
+  group,
+  count,
+  wip,
+  onExpand,
+  onAddIssue,
+  readOnly,
+}: {
+  group: IssueGroup;
+  count: number;
+  // The column's WIP limit, or null when it has none. The strip is too narrow for
+  // the full `count / max`, so a full column only colours its count.
+  wip: WipState | null;
+  onExpand: () => void;
+  onAddIssue: () => void;
+  // In a read-only share the add affordance is hidden.
+  readOnly?: boolean;
+}) {
+  const t = useTranslations('workItems');
+  const { can } = usePermissions();
+  const canCreateIssue = can('work_items', 'create') && !readOnly;
+  return (
+    <div className="flex h-full w-10 shrink-0 flex-col items-center gap-2 rounded-md bg-kanban-column py-2">
+      <Button
+        variant="ghost"
+        size="icon"
+        className="size-6 text-muted-foreground"
+        onClick={onExpand}
+        title={t('expand')}
+      >
+        <ChevronsLeftRight />
+      </Button>
+      {canCreateIssue && (
+        <Button
+          variant="ghost"
+          size="icon"
+          className="size-6 text-muted-foreground"
+          onClick={onAddIssue}
+          title={t('newIssue')}
+        >
+          <Plus />
+        </Button>
+      )}
+      <GroupDot group={group} />
+      <div className="flex flex-1 items-start gap-2 text-sm font-medium [writing-mode:vertical-rl]">
+        <span className="text-foreground">{group.name}</span>
+        <span
+          className={cn(wip?.full ? WIP_FULL_TEXT[wipFullColor(wip)] : 'text-muted-foreground')}
+        >
+          {count}
+        </span>
+      </div>
+    </div>
+  );
+}
