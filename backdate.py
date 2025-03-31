@@ -105,20 +105,12 @@ def git(*args, env=None):
     return result.stdout.strip()
 
 
-def is_text_file(path):
-    try:
-        return b"\x00" not in path.read_bytes()
-    except OSError:
-        return False
-
-
-def repository_text_files():
+def repository_files():
     paths = git("ls-files", "-co", "--exclude-standard", "-z").encode("utf-8")
     return [
         REPOSITORY / Path(raw.decode("utf-8"))
         for raw in paths.split(b"\x00")
         if raw and (REPOSITORY / Path(raw.decode("utf-8"))).is_file()
-        and is_text_file(REPOSITORY / Path(raw.decode("utf-8")))
     ]
 
 
@@ -149,9 +141,9 @@ def validate_git_identity():
 
 
 def main(push=False, delay=0, dry_run=False, seed=DEFAULT_SEED):
-    files = repository_text_files()
+    files = repository_files()
     if not files:
-        raise RuntimeError("No tracked text files were found.")
+        raise RuntimeError("No tracked or untracked project files were found.")
     if not dry_run:
         validate_git_identity()
 
