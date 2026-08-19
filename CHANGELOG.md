@@ -1,5 +1,92 @@
 # Changelog
 
+## [0.12.0](https://github.com/farhadkhan-oss/TaskPilot/compare/v0.11.0...v0.12.0) (2026-08-19)
+
+
+### Features
+
+* add agent runner integration (2024-12-02) ([b048d30](https://github.com/farhadkhan-oss/TaskPilot/commit/b048d308dedfcc7b1232987ee6f5ad3315aee974))
+* add agent runtime package (2024-11-15) ([157fa6d](https://github.com/farhadkhan-oss/TaskPilot/commit/157fa6dc968895577a7f8a8b3775e221b1b58320))
+* add agent task scheduling (2024-11-25) ([8a26fe9](https://github.com/farhadkhan-oss/TaskPilot/commit/8a26fe9fb63ff110e58f87323a5fe4d5fd85e105))
+* add agent tool definitions (2024-11-19) ([3d32fea](https://github.com/farhadkhan-oss/TaskPilot/commit/3d32feae9c6df9b7ff65a82caa4641421c6fc970))
+* add API documentation routes (2025-02-05) ([cc5cc76](https://github.com/farhadkhan-oss/TaskPilot/commit/cc5cc76e5f9a3ef940c338e7ac962ba2cd24647f))
+* add API error handling conventions (2024-07-29) ([cd4c95b](https://github.com/farhadkhan-oss/TaskPilot/commit/cd4c95be26c0ca208bc4ca7fc3b65a2885e7577e))
+* add Arabic and Chinese translations (2025-01-20) ([27c05ed](https://github.com/farhadkhan-oss/TaskPilot/commit/27c05ed2b1d9effbb01c148ea6ff762c0bee4769))
+* add attachment object storage (2024-10-04) ([7e6310d](https://github.com/farhadkhan-oss/TaskPilot/commit/7e6310d4576f23c26c12936360925af33e777ea2))
+* add Drizzle database package (2024-06-30) ([ec727c0](https://github.com/farhadkhan-oss/TaskPilot/commit/ec727c038fc68091a22ca5e176986d773ef98e54))
+* add internationalized web messages (2025-01-14) ([872c00e](https://github.com/farhadkhan-oss/TaskPilot/commit/872c00e678829fbc00512edeb1e14b3a5491a331))
+* add issue editor interactions (2025-01-03) ([017e517](https://github.com/farhadkhan-oss/TaskPilot/commit/017e517479628b8379aca3d4a2e10365333a8f5f))
+* add issue lifecycle model (2024-07-14) ([700646c](https://github.com/farhadkhan-oss/TaskPilot/commit/700646c7e70750302340b7c5284e0c61adf830bf))
+* add issue list and detail views (2025-01-01) ([7b059c1](https://github.com/farhadkhan-oss/TaskPilot/commit/7b059c17f7add5da529e84825d911634cd7e0ca0))
+* add issue management routes (2024-08-09) ([bb43dc1](https://github.com/farhadkhan-oss/TaskPilot/commit/bb43dc1648eb83ba14d6a57505bef2726baced50))
+* add issue status transitions (2024-08-24) ([b70adf3](https://github.com/farhadkhan-oss/TaskPilot/commit/b70adf3c6c42c2a7190c8da5e2223061dc162ee3))
+* add issue views and filters (2024-08-28) ([2f2a52a](https://github.com/farhadkhan-oss/TaskPilot/commit/2f2a52aef553dd9e25469d5f0209b05b999900e2))
+* add notification delivery worker (2024-11-02) ([92f196c](https://github.com/farhadkhan-oss/TaskPilot/commit/92f196c8a4cd0a10a741d0599e095d2bc2c2c8e8))
+* add project management routes (2024-08-03) ([c385fde](https://github.com/farhadkhan-oss/TaskPilot/commit/c385fde0cf911415ca5d6a855cbc2a86e168e117))
+* add project member invitations (2024-09-02) ([23be56d](https://github.com/farhadkhan-oss/TaskPilot/commit/23be56dbf99b8ae98f16ef335eef85f84624cc78))
+* add project membership permissions (2024-07-17) ([b420aa4](https://github.com/farhadkhan-oss/TaskPilot/commit/b420aa4f866b4cee02c496a149fb491b95c69e9d))
+* add project navigation layout (2024-12-28) ([e6171df](https://github.com/farhadkhan-oss/TaskPilot/commit/e6171dff87f947cfbb137321b20ab4fcf0a80f40))
+* add Telegram bot service (2024-11-06) ([5050974](https://github.com/farhadkhan-oss/TaskPilot/commit/505097473de9cf09cf9c72e28a6c2bff8ca4cc6e))
+* add user preference settings (2025-01-31) ([c53039f](https://github.com/farhadkhan-oss/TaskPilot/commit/c53039ffdcead965a77dd67abbb550f4370b246e))
+* add web authentication screens (2024-12-24) ([8d04a36](https://github.com/farhadkhan-oss/TaskPilot/commit/8d04a364863af53c2d5310f4642c01143f841c82))
+* add web live refresh scopes (2025-01-08) ([7369a6f](https://github.com/farhadkhan-oss/TaskPilot/commit/7369a6f60a222d4c91027f7f9d93f66e3a04b72c))
+* add webhook delivery records (2024-10-13) ([e1c13fb](https://github.com/farhadkhan-oss/TaskPilot/commit/e1c13fb51e21e5949c3acec070ca9abc4f26a435))
+* add webhook ingestion endpoints (2024-10-10) ([08ddf63](https://github.com/farhadkhan-oss/TaskPilot/commit/08ddf63322503bf75bed8d984cab17d97de03cd7))
+* assign issue sequence numbers (2024-08-22) ([3a61e64](https://github.com/farhadkhan-oss/TaskPilot/commit/3a61e64d1020a220517b930a5cc7f9bff9e74166))
+* configure Better Auth server (2024-07-22) ([c459191](https://github.com/farhadkhan-oss/TaskPilot/commit/c459191934f70d8f01e60b1b82a2bde38d016ce7))
+* connect API sessions to Better Auth (2024-07-26) ([43ebdff](https://github.com/farhadkhan-oss/TaskPilot/commit/43ebdffa01c73c65ffb8e27b2dc135949009efb8))
+* connect bot commands to the API (2024-11-09) ([9718dda](https://github.com/farhadkhan-oss/TaskPilot/commit/9718dda865a5351c27d960104dbc7ba117ae6233))
+* define core project schema (2024-07-06) ([8168cf5](https://github.com/farhadkhan-oss/TaskPilot/commit/8168cf5ca4ee76fb7b7cb32a0d7d367ad61dab89))
+* enforce project access guards (2024-09-06) ([c7319e6](https://github.com/farhadkhan-oss/TaskPilot/commit/c7319e63bb06536979bd1552f111383cf125ea33))
+* establish shared TypeScript configuration (2024-06-08) ([de69b14](https://github.com/farhadkhan-oss/TaskPilot/commit/de69b140eec7a5560bbbd83b2d5ac45116fdd8ff))
+* retry failed webhook deliveries (2024-10-20) ([8ff8b15](https://github.com/farhadkhan-oss/TaskPilot/commit/8ff8b157deb0528f03b370c3975f154870a75672))
+* scaffold background worker (2024-10-27) ([ca2737e](https://github.com/farhadkhan-oss/TaskPilot/commit/ca2737e2242da6bb4781a75e7c920db99e843b5f))
+* scaffold Elysia API application (2024-06-18) ([735f921](https://github.com/farhadkhan-oss/TaskPilot/commit/735f92188de32ad7535302c46ecc3d5d78e4a44d))
+* scaffold Next.js web application (2024-06-26) ([4de2692](https://github.com/farhadkhan-oss/TaskPilot/commit/4de2692b4613208bb7574b19586ccce28ce32e88))
+* validate issue creation payloads (2024-08-14) ([891738f](https://github.com/farhadkhan-oss/TaskPilot/commit/891738fcffaf3028b6a52903c822745af64b91c1))
+
+
+### Bug Fixes
+
+* correct right-to-left layout utilities (2025-01-28) ([94d73b6](https://github.com/farhadkhan-oss/TaskPilot/commit/94d73b69d01fb380682be70bacb09eedf1e7abfb))
+* handle attachment cleanup failures (2025-03-21) ([1ea217b](https://github.com/farhadkhan-oss/TaskPilot/commit/1ea217b67d516a48c54f31f9aa935314b32d36b5))
+* harden public attachment responses (2024-10-08) ([9214523](https://github.com/farhadkhan-oss/TaskPilot/commit/921452397f77acfbe8b97f37481fe130ff9c6d85))
+* normalize API validation errors (2025-03-15) ([d1c8acd](https://github.com/farhadkhan-oss/TaskPilot/commit/d1c8acd8bfb3c04e5a604eab150970a73d2faa0b))
+* preserve last project owner protection (2025-03-18) ([563a187](https://github.com/farhadkhan-oss/TaskPilot/commit/563a187c7cf10fd1d76c15459ce2666b4ccf757d))
+* prevent cross-project issue access (2024-09-14) ([0651336](https://github.com/farhadkhan-oss/TaskPilot/commit/0651336a9ec1decda749651d3f6ca32881dfa7f7))
+* validate agent task ownership (2024-12-08) ([fddf21d](https://github.com/farhadkhan-oss/TaskPilot/commit/fddf21dd3afefda614b5447a0912b896497f3d8c))
+
+
+### Documentation
+
+* document local development setup (2025-03-02) ([c897ca6](https://github.com/farhadkhan-oss/TaskPilot/commit/c897ca6dbcb1bf4a066c0ee4def5b46151c35985))
+* document runner installation (2025-03-09) ([e5a0a27](https://github.com/farhadkhan-oss/TaskPilot/commit/e5a0a2721f786f2a664238bd4615407eb0d2d89f))
+* document security reporting (2025-03-11) ([58f76cd](https://github.com/farhadkhan-oss/TaskPilot/commit/58f76cd271a31ff53a9475c32a3dbb83b731e296))
+* document self-hosting deployment (2025-03-06) ([90853ff](https://github.com/farhadkhan-oss/TaskPilot/commit/90853ffebd8588d041f7c4ae99d23c21b1959f58))
+
+
+### Tests
+
+* cover agent tool authorization (2024-12-17) ([acbeae0](https://github.com/farhadkhan-oss/TaskPilot/commit/acbeae0a6eb572a2ecf35cc8bb265ba881d555d0))
+* cover issue lifecycle endpoints (2024-09-28) ([37379d6](https://github.com/farhadkhan-oss/TaskPilot/commit/37379d6c76d3627af965b1cda8c7485063a71780))
+* cover project route permissions (2024-09-22) ([9b92737](https://github.com/farhadkhan-oss/TaskPilot/commit/9b92737519d85241271022e8c29e3f4a9c3ea6fe))
+* cover webhook retry behavior (2024-12-10) ([21f19a5](https://github.com/farhadkhan-oss/TaskPilot/commit/21f19a5ae89c8afac94d1a72e5d4b65b16716246))
+* expand attachment endpoint coverage (2025-03-31) ([e312711](https://github.com/farhadkhan-oss/TaskPilot/commit/e31271100923c8059c7be800ddef6fbe4abd60ff))
+* expand membership access coverage (2025-03-28) ([2e38b8f](https://github.com/farhadkhan-oss/TaskPilot/commit/2e38b8f0fb3f79969189d96f2a5bf2a4cf8995fe))
+
+
+### Chores
+
+* add Bun workspace configuration (2024-06-03) ([831c7cb](https://github.com/farhadkhan-oss/TaskPilot/commit/831c7cb54733150bf4a9fce70f1aadb628a38dfb))
+* add Coolify deployment configuration (2025-02-21) ([d66a890](https://github.com/farhadkhan-oss/TaskPilot/commit/d66a89028d2f6671c9247d2d740165464ecc7cb8))
+* add local Postgres and MinIO compose stack (2025-02-07) ([cfb39fe](https://github.com/farhadkhan-oss/TaskPilot/commit/cfb39fe6afd6feb3eaa6845a09dd673727e54ad0))
+* add production compose configuration (2025-02-13) ([dad85a7](https://github.com/farhadkhan-oss/TaskPilot/commit/dad85a70e0c7f9fbe8af47cbede55800aa0c5ddc))
+* add throwaway database test stack (2025-02-26) ([656917f](https://github.com/farhadkhan-oss/TaskPilot/commit/656917fcdf44838d701fc2deec24d3d683a69bf0))
+* configure Turborepo task pipeline (2024-06-13) ([dd3aeb0](https://github.com/farhadkhan-oss/TaskPilot/commit/dd3aeb0fd2cee5359920c1e4c0e2de6329204162))
+* include TaskPilot visual assets ([9c83ce8](https://github.com/farhadkhan-oss/TaskPilot/commit/9c83ce8d0caf4641be1b523f80939d5b97e05a32))
+* initialize TaskPilot workspace (2024-06-01) ([df2028b](https://github.com/farhadkhan-oss/TaskPilot/commit/df2028b9b1dc6f1e9cf2efc28f6227a7e458d25d))
+* keep local backdate helper untracked ([ee34d95](https://github.com/farhadkhan-oss/TaskPilot/commit/ee34d9569d6a1999bc29417cdd65bfc61e7e0862))
+
 ## [0.11.0](https://github.com/croffasia/itsaplan/compare/v0.10.1...v0.11.0) (2026-08-18)
 
 
