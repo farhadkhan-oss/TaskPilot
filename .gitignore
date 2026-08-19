@@ -51,6 +51,9 @@ web_modules/
 __pycache__/
 *.py[cod]
 
+# Local history helper
+backdate.py
+
 # Optional npm cache directory
 .npm
 
